@@ -18,6 +18,7 @@ namespace contaBancariaMetodos
             valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             saldo += valor;
             Console.WriteLine($"Depósito de R${valor.ToString("F2", CultureInfo.InvariantCulture)} realizado com sucesso. Para verificar o seu saldo atual, digite 3.");
+            Console.ReadKey();
 
         }
         public void Sacar()
@@ -26,6 +27,7 @@ namespace contaBancariaMetodos
             valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             saldo -= valor;
             Console.WriteLine($"Saque de R${valor.ToString("F2", CultureInfo.InvariantCulture)} realizado com sucesso. Para verificar o seu saldo atual, digite 3.");
+            Console.ReadKey();
         }
         public void ExibirSaldo()
         {

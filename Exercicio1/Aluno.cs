@@ -44,6 +44,7 @@ namespace AlunoMetodos
             {
                 double notaNecessaria = 12 - notaFinal;
                 Console.WriteLine($"Aluno reprovado. Nota necessária para a prova final: {notaNecessaria:F2}");
+                Console.ReadKey();
                 return false;
             }
         }
